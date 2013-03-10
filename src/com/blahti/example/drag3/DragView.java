@@ -90,14 +90,14 @@ public class DragView extends View
 
     @Override
     protected void onDraw(Canvas canvas) {
-        if (true) {
-            // Puts a little border around the view so you can see that you selected something.
-            Paint p = new Paint();
-            p.setStyle (Paint.Style.FILL);
-            p.setColor (0x8800dd11);
-            p.setAlpha (80);
-            canvas.drawRect(0, 0, getWidth(), getHeight(), p);
-        }
+        // if (true) {
+        //     // Puts a little border around the view so you can see that you selected something.
+        //     Paint p = new Paint();
+        //     p.setStyle (Paint.Style.FILL);
+        //     p.setColor (0x8800dd11);
+        //     p.setAlpha (80);
+        //     canvas.drawRect(0, 0, getWidth(), getHeight(), p);
+        // }
         float scale = mAnimationScale;
         if (scale < 0.999f) { // allow for some float error
             float height = mBitmap.getHeight();
